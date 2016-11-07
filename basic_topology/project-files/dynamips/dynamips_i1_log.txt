@@ -1,0 +1,33 @@
+Nov 07 08:30:09.620 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Nov 07 08:30:09.620 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35573.
+Nov 07 08:30:09.670 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 07 08:30:09.675 HYPERVISOR: exec_cmd: hypervisor working_dir /home/user/lab5-2015/basic_topology/project-files/dynamips 
+Nov 07 08:30:09.676 GENERAL: working_dir=/home/user/lab5-2015/basic_topology/project-files/dynamips
+Nov 07 08:30:09.686 HYPERVISOR: exec_cmd: vm create R4 4 c3600 
+Nov 07 08:30:09.686 VM: VM R4 created.
+Nov 07 08:30:09.698 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5001 
+Nov 07 08:30:09.699 HYPERVISOR: exec_cmd: c3600 get_mac_addr R4 
+Nov 07 08:30:09.703 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Nov 07 08:30:09.705 HYPERVISOR: exec_cmd: vm set_ios R4 /home/user/GNS3/images/IOS/c3640-a3js-mz.124-23.image 
+Nov 07 08:30:09.706 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 07 08:30:09.707 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 NM-1FE-TX 
+Nov 07 08:30:09.708 HYPERVISOR: exec_cmd: vm set_ram R4 192 
+Nov 07 08:30:09.716 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 07 08:30:09.719 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x605b90e0 
+Nov 07 08:30:09.720 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 07 08:30:09.722 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-1FE-TX 
+Nov 07 08:30:09.723 HYPERVISOR: exec_cmd: c3600 set_mac_addr R4 cc04.0b83.0000 
+Nov 07 08:30:09.727 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Nov 07 08:30:10.855 HYPERVISOR: exec_cmd: nio create_udp udp-6ad53da7-2168-40fb-a32f-852daceab3dd 10004 127.0.0.1 10005 
+Nov 07 08:30:10.856 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-6ad53da7-2168-40fb-a32f-852daceab3dd 
+Nov 07 08:30:10.856 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 07 08:30:11.079 HYPERVISOR: exec_cmd: nio create_udp udp-79bef1cc-a5ef-4341-ac1a-1869cb6b1651 10009 127.0.0.1 10008 
+Nov 07 08:30:11.080 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-79bef1cc-a5ef-4341-ac1a-1869cb6b1651 
+Nov 07 08:30:11.080 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 07 08:30:15.027 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 07 08:30:15.034 HYPERVISOR: exec_cmd: vm extract_config R4 
+Nov 07 08:30:15.041 HYPERVISOR: exec_cmd: vm delete R4 
+Nov 07 08:30:15.041 VM: VM R4 destroyed.
+Nov 07 08:30:15.042 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 07 08:30:15.168 HYPERVISOR: Stopped.
+Nov 07 08:30:15.168 GENERAL: reset done.

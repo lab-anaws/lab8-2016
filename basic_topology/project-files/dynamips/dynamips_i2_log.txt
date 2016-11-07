@@ -1,0 +1,33 @@
+Nov 07 08:30:09.665 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Nov 07 08:30:09.665 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46988.
+Nov 07 08:30:09.698 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 07 08:30:09.699 HYPERVISOR: exec_cmd: hypervisor working_dir /home/user/lab5-2015/basic_topology/project-files/dynamips 
+Nov 07 08:30:09.699 GENERAL: working_dir=/home/user/lab5-2015/basic_topology/project-files/dynamips
+Nov 07 08:30:09.704 HYPERVISOR: exec_cmd: vm create R2 2 c3600 
+Nov 07 08:30:09.704 VM: VM R2 created.
+Nov 07 08:30:09.705 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5003 
+Nov 07 08:30:09.706 HYPERVISOR: exec_cmd: c3600 get_mac_addr R2 
+Nov 07 08:30:09.707 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Nov 07 08:30:09.716 HYPERVISOR: exec_cmd: vm set_ios R2 /home/user/GNS3/images/IOS/c3640-a3js-mz.124-23.image 
+Nov 07 08:30:09.716 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 07 08:30:09.719 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 NM-1FE-TX 
+Nov 07 08:30:09.720 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+Nov 07 08:30:09.722 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 07 08:30:09.724 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x605b90e0 
+Nov 07 08:30:09.728 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 07 08:30:09.872 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Nov 07 08:30:09.916 HYPERVISOR: exec_cmd: c3600 set_mac_addr R2 cc02.0b4c.0000 
+Nov 07 08:30:09.919 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Nov 07 08:30:10.734 HYPERVISOR: exec_cmd: nio create_udp udp-7e256692-7520-463a-945b-15762ea0cf1a 10001 127.0.0.1 10000 
+Nov 07 08:30:10.735 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-7e256692-7520-463a-945b-15762ea0cf1a 
+Nov 07 08:30:10.736 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 07 08:30:10.943 HYPERVISOR: exec_cmd: nio create_udp udp-e1e18607-5d1e-4860-92fd-d19093e32dc0 10006 127.0.0.1 10007 
+Nov 07 08:30:10.944 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-e1e18607-5d1e-4860-92fd-d19093e32dc0 
+Nov 07 08:30:10.944 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 07 08:30:15.028 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 07 08:30:15.034 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 07 08:30:15.041 HYPERVISOR: exec_cmd: vm delete R2 
+Nov 07 08:30:15.041 VM: VM R2 destroyed.
+Nov 07 08:30:15.043 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 07 08:30:15.192 HYPERVISOR: Stopped.
+Nov 07 08:30:15.192 GENERAL: reset done.
